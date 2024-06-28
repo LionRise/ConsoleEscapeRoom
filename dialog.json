@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Text": "Welcome to the Escape Room Game! \n To save your current level once you entered the escape room just type exit and go back to the main menu and choose save.",
+    "Options": [2, 3]
+  },
+  {
+    "Id": 2,
+    "Text": "You see a dark room with two doors in front of you. If you want to enter type 1.",
+    "Options": [4, 5]
+  },
+  {
+    "Id": 3,
+    "Text": "You see a bright light and a path leading outside. If you want to choose this option type 2.",
+    "Options": []
+  },
+  {
+    "Id": 4,
+    "Text": "Choose the left door.",
+    "Options": [6]
+  },
+  {
+    "Id": 5,
+    "Text": "Choose the right door.",
+    "Options": [7]
+  },
+  {
+    "Id": 6,
+    "Text": "Congratulations you found a treasure, but the door closed behind you. Now you need to solve a couple of puzzles to escape again. Type 1 to start.",
+    "Options": []
+  },
+  {
+    "Id": 7,
+    "Text": "Oh no, you encountered a monster. Now you need to solve his puzzles to escape again. Type 1 to start.",
+    "Options": []
+  }
+]

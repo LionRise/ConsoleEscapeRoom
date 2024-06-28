@@ -1,0 +1,28 @@
+[
+  {
+    "Id": 1,
+    "Puzzles": [
+      {
+        "Prompt": "Level 1, Puzzle 1: Solve the riddle to find the key. Riddle: What has keys but can't open locks?",
+        "Answer": "piano"
+      },
+      {
+        "Prompt": "Level 1, Puzzle 2: What has a head, a tail, is brown, and has no legs?",
+        "Answer": "penny"
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Puzzles": [
+      {
+        "Prompt": "Level 2, Puzzle 1: Find the hidden number in the sequence. Sequence: 2, 4, 8, 16, ?",
+        "Answer": "32"
+      },
+      {
+        "Prompt": "Level 2, Puzzle 2: I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+        "Answer": "echo"
+      }
+    ]
+  }
+]

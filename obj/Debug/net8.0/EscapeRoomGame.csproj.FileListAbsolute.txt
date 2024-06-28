@@ -1,0 +1,17 @@
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\bin\Debug\net8.0\EscapeRoomGame.exe
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\bin\Debug\net8.0\EscapeRoomGame.deps.json
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\bin\Debug\net8.0\EscapeRoomGame.runtimeconfig.json
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\bin\Debug\net8.0\EscapeRoomGame.dll
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\bin\Debug\net8.0\EscapeRoomGame.pdb
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.AssemblyInfoInputs.cache
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.AssemblyInfo.cs
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.csproj.CoreCompileInputs.cache
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.dll
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\refint\EscapeRoomGame.dll
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.pdb
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.genruntimeconfig.cache
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\ref\EscapeRoomGame.dll
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.csproj.AssemblyReference.cache
+D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\obj\Debug\net8.0\EscapeRoomGame.csproj.CopyComplete
