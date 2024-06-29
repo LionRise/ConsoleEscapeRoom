@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EscapeRoomGame
-build_property.ProjectDir = D:\OverflowFromCDisk\BCC\fourthSem\CD\alternativeEscapeRoom\EscapeRoomGame\
+build_property.ProjectDir = C:\Users\hoell\Desktop\Fourth Semester\C Sharp\FinalEscapeGame\ConsoleEscapeRoom\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

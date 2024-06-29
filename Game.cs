@@ -22,6 +22,7 @@ namespace EscapeRoomGame
             currentLevelIndex = 0;
         }
 
+        // Read the json files with LoadDialog and LoadLevels
         private void LoadDialog()
         {
             if (File.Exists(dialogPath))
@@ -117,7 +118,7 @@ namespace EscapeRoomGame
 
             if (allLevelsCompleted)
             {
-                Console.WriteLine("Congratulations! You have completed all levels!");
+                Console.WriteLine("Congratulations! You have escaped the room!");
                 currentLevelIndex = 0; // Reset for a new game
             }
 
@@ -156,23 +157,42 @@ namespace EscapeRoomGame
             Console.ReadKey();
         }
 
+
+
+
+
+
+
+
+
+
+
+
         private void ShowDialog(int id)
         {
             var node = dialogNodes.FirstOrDefault(n => n.Id == id);
             if (node != null)
             {
-                Console.WriteLine(node.Text);
+                // Print the title before the options
+                Console.WriteLine(node.Title);
+                Console.WriteLine(); // Add an empty line for better readability
 
                 // Use LINQ to retrieve and display options
                 var options = dialogNodes.Where(n => node.Options.Contains(n.Id)).ToList();
                 if (options.Any())
                 {
+
+
+
+                    Console.WriteLine(node.Text); 
+                     
+
                     Console.WriteLine("Choose an option:");
+
                     for (int i = 0; i < options.Count; i++)
                     {
-                        Console.WriteLine($"{i + 1}. {options[i].Text}");
+                        Console.WriteLine($"{i + 1}. {options[i].Title}"); 
                     }
-
                     int choice;
                     bool validChoice = false;
 
@@ -192,11 +212,13 @@ namespace EscapeRoomGame
                 }
                 else
                 {
+                    Console.WriteLine(node.Text); // Print the text if there are no options
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
                 }
             }
         }
+
     }
 
     public class GameState

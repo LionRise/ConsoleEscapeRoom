@@ -1,37 +1,116 @@
 [
   {
     "Id": 1,
-    "Text": "Welcome to the Escape Room Game! \n To save your current level once you entered the escape room just type exit and go back to the main menu and choose save.",
-    "Options": [2, 3]
+    "Title": "Welcome to the Escape Room Game! \nType in a number to move around the Scenes. \nTo save your current level once you entered the escape room just type 'exit' and go back to the main menu and choose save.\n",
+    "Text": "Hello! You are in the middle of a room with a shelf by your right side, a door in front of you \nand a table with a lot of stuff on the left. Where do you want to go? \n",
+    "Options": [2, 7, 10]
   },
   {
     "Id": 2,
-    "Text": "You see a dark room with two doors in front of you. If you want to enter type 1.",
-    "Options": [4, 5]
+    "Title": "Investigate the shelf",
+    "Text": "You see a shelf with a lot of books and a metal box with a keyhole.",
+    "Options": [3, 4, 6]
   },
   {
     "Id": 3,
-    "Text": "You see a bright light and a path leading outside. If you want to choose this option type 2.",
-    "Options": []
+    "Title": "Search the books for something interesting",
+    "Text": "You can see that 5 of the books looks different, each got a single letter on them which are C I G M A",
+    "Options": [2]
   },
   {
     "Id": 4,
-    "Text": "Choose the left door.",
-    "Options": [6]
+    "Title": "Try to open the metal box",
+    "Text": "You need a key to open the box,",
+    "Options": [2]
   },
   {
     "Id": 5,
-    "Text": "Choose the right door.",
-    "Options": [7]
+    "Title": "Try to open the metal box ( Only with key)",
+    "Text": "You got another key but its strangly shaped and sturdy.",
+    "Options": [6]
   },
   {
     "Id": 6,
-    "Text": "Congratulations you found a treasure, but the door closed behind you. Now you need to solve a couple of puzzles to escape again. Type 1 to start.",
-    "Options": []
+    "Title": "Go back to the middle of the room",
+    "Text": "Your in the middle of the room, what do you want to do?",
+    "Options": [2, 7, 12, 14 ]
   },
   {
     "Id": 7,
-    "Text": "Oh no, you encountered a monster. Now you need to solve his puzzles to escape again. Type 1 to start.",
+    "Title": "Go to the door",
+    "Text": "It seems locked,",
+    "Options": [6, 14]
+  },
+  {
+    "Id": 8,
+    "Title": "Go to the door (Only with key)",
+    "Text": "The door opens as soon as you turned the strange sturdy key",
+    "Options": [14]
+  },
+  {
+    "Id": 9,
+    "Title": "",
+    "Text": "",
+    "Options": []
+  },
+  {
+    "Id": 10,
+    "Title": "Get to the table",
+    "Text": "There is a lot of stuff scattered all over the table",
+    "Options": [6, 11, 12, 13]
+  },
+  {
+    "Id": 11,
+    "Title": "Look through the stuff.",
+    "Text": "You found a sword!",
+    "Options": [10]
+  },
+  {
+    "Id": 12,
+    "Title": "Look into the drawers",
+    "Text": "You found a little key with a little note 'Beware of the beast!'.",
+    "Options": [10]
+  },
+  {
+    "Id": 13,
+    "Title": "Look at the picture on the table",
+    "Text": "The picture shows a happy turtle swimming in a lake munching on a leaf, how beautiful and calming.",
+    "Options": [10]
+  },
+  {
+    "Id": 14,
+    "Title": "Go through the door",
+    "Text": "You can see Red eyes starring at you! Quick! What do you do! ",
+    "Options": [15, 17]
+  },
+  {
+    "Id": 15,
+    "Title": "ATTACK",
+    "Text": "You chopped the head of the Beast, which appearently was a harmless turtle... well...",
+    "Options": [16]
+  },
+  {
+    "Id": 16,
+    "Title": "Carry on with a bad feeling",
+    "Text": "You can see another door which you hear speaking: Only the wisest will pass through me. Solve my riddles and you are free!",
+    "Options": [20]
+  },
+  {
+    "Id": 17,
+    "Title": "Aproach the beast with the red eyes slowly.",
+    "Text": "You find out that the 'Beast' was a harmless turtle. What a cute Turtle.",
+    "Options": [18]
+  },
+  {
+    "Id": 18,
+    "Title": "Carry on with a good feeling!.",
+    "Text": "You can see another door which you hear speaking: Only the wisest will pass through me. Solve my riddles and you are free!",
+    "Options": [20]
+  },
+  {
+    "Id": 20,
+    "Title": "Aproach the door and attempt the riddles",
+    "Text": "Behold my unsolvable Riddles",
     "Options": []
   }
 ]
