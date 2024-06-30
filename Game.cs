@@ -15,6 +15,10 @@ namespace EscapeRoomGame
         private string saveFilePath = "savegame.json";
         private int currentLevelIndex;
 
+        private bool gotBoxKey;
+        private bool gotDoorKey;
+        private bool gotSwordKey;
+
         public Game()
         {
             LoadDialog();
@@ -159,40 +163,30 @@ namespace EscapeRoomGame
 
 
 
-
-
-
-
-
-
-
-
-
         private void ShowDialog(int id)
         {
             var node = dialogNodes.FirstOrDefault(n => n.Id == id);
             if (node != null)
             {
-                // Print the title before the options
-                Console.WriteLine(node.Title);
-                Console.WriteLine(); // Add an empty line for better readability
+                
+                PerformAction(node.Action);
 
-                // Use LINQ to retrieve and display options
-                var options = dialogNodes.Where(n => node.Options.Contains(n.Id)).ToList();
+            
+                Console.WriteLine(node.Title);
+                Console.WriteLine(); 
+
+                // Filter options based on conditions
+                var options = dialogNodes.Where(n => node.Options.Contains(n.Id) && CheckCondition(n.Condition)).ToList();
                 if (options.Any())
                 {
-
-
-
-                    Console.WriteLine(node.Text); 
-                     
-
+                    Console.WriteLine(node.Text);
                     Console.WriteLine("Choose an option:");
 
                     for (int i = 0; i < options.Count; i++)
                     {
-                        Console.WriteLine($"{i + 1}. {options[i].Title}"); 
+                        Console.WriteLine($"{i + 1}. {options[i].Title}");
                     }
+
                     int choice;
                     bool validChoice = false;
 
@@ -218,6 +212,54 @@ namespace EscapeRoomGame
                 }
             }
         }
+
+        private void PerformAction(string action)
+        {
+            switch (action)
+            {
+                case "GetBoxKey":
+                    gotBoxKey = true;
+                    break;
+                case "GetDoorKey":
+                    gotDoorKey = true;
+                    break;
+                case "GetSword":
+                    gotSwordKey = true;
+                    break;
+                case "UseBoxKey":
+                    gotBoxKey = false;
+                    break;
+                case "UseDoorKey":
+                    gotDoorKey = false;
+                    break;
+                case "UseSword":
+                    gotSwordKey = false;
+                    break;
+                    // Add other actions as needed
+            }
+        }
+
+        private bool CheckCondition(string condition)
+        {
+            switch (condition)
+            {
+                case "NeedBoxKey":
+                    return gotBoxKey;
+                case "NeedDoorKey":
+                    return gotDoorKey;
+                case "NeedSwordKey":
+                    return gotSwordKey;
+                case "NoBoxKey":
+                    return !gotBoxKey;
+                case "NoDoorKey":
+                    return !gotDoorKey;
+                case "NoSwordKey":
+                    return !gotSwordKey;
+                default:
+                    return true; 
+            }
+        }
+
 
     }
 

@@ -3,114 +3,136 @@
     "Id": 1,
     "Title": "Welcome to the Escape Room Game! \nType in a number to move around the Scenes. \nTo save your current level once you entered the escape room just type 'exit' and go back to the main menu and choose save.\n",
     "Text": "Hello! You are in the middle of a room with a shelf by your right side, a door in front of you \nand a table with a lot of stuff on the left. Where do you want to go? \n",
-    "Options": [2, 7, 10]
+    "Options": [2, 7, 8, 10]
+    ,"Action": ""
   },
   {
     "Id": 2,
     "Title": "Investigate the shelf",
     "Text": "You see a shelf with a lot of books and a metal box with a keyhole.",
-    "Options": [3, 4, 6]
+    "Options": [3, 4, 6],
+    "Action": ""
   },
   {
     "Id": 3,
     "Title": "Search the books for something interesting",
-    "Text": "You can see that 5 of the books looks different, each got a single letter on them which are C I G M A",
-    "Options": [2]
+    "Text": "You can see that 5 of the books looks different, each got a single letter on them which are B E A S T",
+    "Options": [2],
+    "Action": ""
   },
   {
     "Id": 4,
-    "Title": "Try to open the metal box",
+    "Title": "Have a closer look onto the metal box.", 
     "Text": "You need a key to open the box,",
-    "Options": [2]
+    "Options": [2,5],
+    "Action": "NeedBoxKey"
   },
   {
     "Id": 5,
-    "Title": "Try to open the metal box ( Only with key)",
-    "Text": "You got another key but its strangly shaped and sturdy.",
-    "Options": [6]
+    "Title": "Try to open the metal box",
+    "Text": "You opened the box with the little metal key",
+    "Options": [9],
+    "Condition": "NeedBoxKey",
+    "Action": "UseBoxKey"
+    
   },
   {
     "Id": 6,
     "Title": "Go back to the middle of the room",
     "Text": "Your in the middle of the room, what do you want to do?",
-    "Options": [2, 7, 12, 14 ]
+    "Options": [2, 7, 10 ],
+    "Action": ""
   },
   {
     "Id": 7,
     "Title": "Go to the door",
     "Text": "It seems locked,",
-    "Options": [6, 14]
+    "Options": [6,8]     
   },
   {
     "Id": 8,
-    "Title": "Go to the door (Only with key)",
-    "Text": "The door opens as soon as you turned the strange sturdy key",
-    "Options": [14]
+    "Title": "Try to open the door with the strange key.",
+    "Text": "The strange sturdy key fits into the doorlock and the door opens. ",
+    "Options": [14, 6],
+    "Condition": "NeedDoorKey",
+    "Action": "UseDoorKey"
   },
   {
     "Id": 9,
-    "Title": "",
-    "Text": "",
-    "Options": []
+    "Title": "Take the object inside the box",
+    "Text": "You got another key but its strangly shaped and sturdy.",
+    "Options": [2],
+    "Action": "GetDoorKey"
   },
   {
     "Id": 10,
     "Title": "Get to the table",
     "Text": "There is a lot of stuff scattered all over the table",
-    "Options": [6, 11, 12, 13]
+    "Options": [6, 11, 12, 13],
+    "Action": ""
   },
   {
     "Id": 11,
     "Title": "Look through the stuff.",
     "Text": "You found a sword!",
-    "Options": [10]
+    "Options": [10],
+    "Action": "GetSword"
   },
   {
     "Id": 12,
-    "Title": "Look into the drawers",
-    "Text": "You found a little key with a little note 'Beware of the beast!'.",
-    "Options": [10]
+    "Title": "Search the drawers",
+    "Text": "You found a little metal key with a little note 'Beware of the beast!'.",
+    "Options": [10],
+    "Action": "GetBoxKey"
   },
   {
     "Id": 13,
-    "Title": "Look at the picture on the table",
+    "Title": "Have a look at the picture on the table",
     "Text": "The picture shows a happy turtle swimming in a lake munching on a leaf, how beautiful and calming.",
-    "Options": [10]
+    "Options": [10],
+    "Action": ""
   },
   {
     "Id": 14,
     "Title": "Go through the door",
     "Text": "You can see Red eyes starring at you! Quick! What do you do! ",
-    "Options": [15, 17]
+    "Options": [15, 17],
+    "Action": ""
   },
   {
     "Id": 15,
     "Title": "ATTACK",
     "Text": "You chopped the head of the Beast, which appearently was a harmless turtle... well...",
-    "Options": [16]
+    "Options": [16],
+    "Condition": "NeedSword",
+    "Action": ""
   },
   {
     "Id": 16,
     "Title": "Carry on with a bad feeling",
     "Text": "You can see another door which you hear speaking: Only the wisest will pass through me. Solve my riddles and you are free!",
-    "Options": [20]
+    "Options": [20],
+    "Action": ""
   },
   {
     "Id": 17,
     "Title": "Aproach the beast with the red eyes slowly.",
     "Text": "You find out that the 'Beast' was a harmless turtle. What a cute Turtle.",
-    "Options": [18]
+    "Options": [18],
+    "Action": ""
   },
   {
     "Id": 18,
     "Title": "Carry on with a good feeling!.",
     "Text": "You can see another door which you hear speaking: Only the wisest will pass through me. Solve my riddles and you are free!",
-    "Options": [20]
+    "Options": [20],
+    "Action": ""
   },
   {
     "Id": 20,
     "Title": "Aproach the door and attempt the riddles",
     "Text": "Behold my unsolvable Riddles",
-    "Options": []
+    "Options": [],
+    "Action": ""
   }
 ]
